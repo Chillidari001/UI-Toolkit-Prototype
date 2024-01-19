@@ -1,0 +1,62 @@
+:root{
+	justify-content: center;
+	align-items: center;
+}
+
+.Container{
+
+}
+
+
+.BorderedBox{
+	border-width: 4px;
+	border-color: white;
+	border-radius: 0px;
+	padding: 5px;
+}
+
+.BorderedBox:hover{
+	border-color: black;
+}
+
+.ViewBox{
+	width: 300px;
+	height: 300px;
+}
+
+.ControlBox{
+	flex-direction: column;
+	width: 300px;
+	height: 180px;
+	padding: 5px;
+}
+
+.ControlBox Button
+{
+	width: 20px;
+	height: 20px;
+	background-color: yellow;
+	border-width: 4px;
+	transition: 0.25s all;
+}
+
+.ControlBox Slider
+{
+	flex-grow: 1;
+}
+
+.unity-base-slider__dragger
+{
+	height: 25px;
+	width: 25px;
+	border-radius: 25px;
+	border-width: 2px;
+	border-color: black;
+}
+
+.unity-base-slider__dragger:hover
+{
+	border-color: yellow;
+	border-width: 4px;
+	transition: 0.25s all;
+}

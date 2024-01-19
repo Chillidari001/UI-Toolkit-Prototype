@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="PerfStats" src="project://database/Assets/Debug/PerfStats.uxml?fileID=9197481963319205126&amp;guid=da5b0fd1428a47348ba2b44276da50a8&amp;type=3#PerfStats" />
+    <ui:Instance template="PerfStats" name="PerfStats" style="align-items: stretch; align-self: flex-start; display: none; position: absolute; overflow: visible;" />
+    <ui:VisualElement name="Console" style="flex-grow: 1;">
+        <ui:TextField picking-mode="Ignore" focusable="true" name="ConsoleInput" style="display: none; align-self: auto; align-items: stretch; position: relative;" />
+    </ui:VisualElement>
+</ui:UXML>

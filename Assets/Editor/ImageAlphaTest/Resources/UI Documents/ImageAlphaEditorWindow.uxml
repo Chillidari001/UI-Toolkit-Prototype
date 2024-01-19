@@ -1,0 +1,26 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Editor/ImageAlphaTest/Resources/Style/AlphaEditorStyle.uss?fileID=7433441132597879392&amp;guid=9c0519141444c5345bd26373a9d24f7a&amp;type=3#AlphaEditorStyle" />
+    <ui:Label tabindex="-1" text="Image Editor" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Title" style="background-color: rgba(0, 0, 0, 0);" />
+    <ui:DropdownField label="Texture Option" index="0" choices="Generate New Texture, Load Existing Texture," name="texture-option" />
+    <ui:VisualElement name="custom-tex-values" style="flex-grow: 1; flex-direction: row;">
+        <ui:IntegerField label="Width&#10;" value="100" name="width-field" style="height: 38px; width: 92px; flex-direction: row; flex-grow: 1;" />
+        <ui:IntegerField label="Height&#10;" value="100" name="height-field" style="height: 37px; width: 95px; flex-grow: 1;" />
+        <ui:Button text="Create Texture" parse-escape-sequences="true" display-tooltip-when-elided="true" name="create-tex-button" style="flex-grow: 1; height: 34px; width: 94px;" />
+    </ui:VisualElement>
+    <uie:ObjectField label="Texture" name="texture-field" type="UnityEngine.Texture2D, UnityEngine.CoreModule" style="flex-grow: 0; align-items: stretch; justify-content: flex-start; align-self: auto; overflow: hidden; translate: 0 0; margin-top: 1px;" />
+    <ui:DropdownField label="Alpha Option" index="0" choices="Alpha Whole, Gradient Right, Gradient Left, Gradient Bottom, Gradient Top" name="alpha-dropdown" style="translate: 0 0;" />
+    <ui:SliderInt picking-mode="Ignore" label="Alpha" value="255" high-value="255" name="alpha-slider" style="translate: 0 0;">
+        <ui:IntegerField value="255" name="alpha-input" />
+    </ui:SliderInt>
+    <uie:GradientField label="Gradient" style="translate: 0 0; padding-top: 3px;" />
+    <ui:VisualElement name="preview-area" style="flex-grow: 1; translate: 0 0;">
+        <uie:ColorField label="Color" value="RGBA(0.000, 1.000, 1.000, 1.000)" name="tint">
+            <ui:VisualElement name="preview-pane" style="flex-grow: 1; background-image: resource(&apos;Transparency500&apos;); height: 161px; width: 300px; align-items: center; transform-origin: center; translate: 0 0; justify-content: center;">
+                <ui:VisualElement name="image-preview" style="flex-grow: 1; width: 300px; height: 300px;" />
+            </ui:VisualElement>
+        </uie:ColorField>
+    </ui:VisualElement>
+    <ui:VisualElement style="flex-grow: 1;">
+        <ui:Button text="Export Texture" parse-escape-sequences="true" display-tooltip-when-elided="true" name="export-button" />
+    </ui:VisualElement>
+</ui:UXML>
